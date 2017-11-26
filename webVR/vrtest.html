@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>Hello, WebVR! - A-Frame</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame" />
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" media="all" /><script>WebFont.load({google: {families: ["Roboto", "Roboto Mono"]}});</script></head>
+  <body class="a-body aframe-inspector-opened">
+    <a-scene class="fullscreen" canvas="" inspector="url:https://unpkg.com/aframe-inspector@0.5.x/dist/aframe-inspector.min.js" keyboard-shortcuts="enterVR:true;exitVR:true;resetSensor:true" screenshot="width:4096;height:2048" vr-mode-ui="enabled:true" auto-enter-vr="display:GearVR;enabled:true">
+      <a-box position="-1 6 -3" rotation="0 45 0" color="#4CC3D9" scale="1 1 1" visible="true" material="color:#4CC3D9" geometry="primitive:box"></a-box>
+	  <a-torus-knot position="-3 2 1" rotation="0 0 0" width="2" color="white" scale="1 1 1" visible="true" material="width:2;color:white" geometry="primitive:torusKnot"></a-torus-knot>
+	  <a-dodecahedron color="#FF926B" position="0 2 -3" radius="2" rotation="0 0 0" scale="1 1 1" visible="true" material="color:#FF926B" geometry="primitive:dodecahedron;radius:2"></a-dodecahedron>
+	  
+    <!--   <a-sphere position="-20 1.25 -10" radius="1.25" color="#EF2D5E">
+        <a-ring position="-1 1 0" color="#B96FD3"></a-ring>
+        <a-ring position="1 1 0" color="#B96FD3"></a-ring>
+		<a-ring position = "0 1 2" color = "blue"></a-ring>
+      </a-sphere>
+      <a-cylinder position="-5 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="blue" scale="1.69 1.5699999999999998 1" visible="true" material="color:blue" geometry="primitive:plane;width:10;height:10"></a-plane>
+      <a-sky color="#ABABAB" position="0 0 0" rotation="0 0 0" scale="-1 1 1" visible="true" material="color:#ABABAB;shader:flat" geometry="primitive:sphere;radius:5000;segmentsWidth:64;segmentsHeight:20"></a-sky>
+    <canvas class="a-canvas a-grab-cursor" data-aframe-canvas="true" width="1141" height="525" style="width: 1141px; height: 525px;"></canvas><a-entity camera="far:10000;fov:50;near:0.05;active:true" position="0 0 0" rotation="0 0 0" scale="1 1 1" visible="true"></a-entity></a-scene>
+  
+<div class="a-inspector-loader">Loading Inspector<span class="dots"><span>.</span><span>.</span><span>.</span></span></div><a style="display: none;"></a></body></html>
